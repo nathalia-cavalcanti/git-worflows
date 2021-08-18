@@ -22,6 +22,7 @@
  */
 plugins {
     id 'java'
+    id "org.sonarqube" version "3.3"
 }
 
 group 'br.ufrn'
@@ -40,4 +41,12 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "nathalia-cavalcanti_git-worflows"
+    property "sonar.organization", "nathalia-cavalcanti"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
