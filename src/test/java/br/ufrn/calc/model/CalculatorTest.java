@@ -37,7 +37,7 @@ class CalculatorTest {
      * Simple sun operation calculate test
      */
     @Test
-    public void sumTest(){
+    void sumTest(){
         Assertions.assertEquals(40, new Calculator().sum(10, 30));
     }
 
@@ -82,7 +82,7 @@ class CalculatorTest {
      * Division by zero operation calculate test
      */
     @Test
-    void squareNegativeNumberTest() { Assertions.assertThrows(IllegalArgumentException.class, () -> { new Calculator().square(-9); }); }
+    void squareNegativeNumberTest() { Assertions.assertThrows(IllegalArgumentException.class, () -> { C.square(-9); }); }
 
 
 }
