@@ -31,6 +31,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class CalculatorTest {
+	Calculator C = new Calculator();
 
     /**
      * Simple sun operation calculate test
@@ -62,7 +63,7 @@ class CalculatorTest {
      * Division by zero operation calculate test
      */
     @Test
-    void divByZeroTest() { Assertions.assertThrows(IllegalArgumentException.class, () -> { Calculator C = new Calculator(); C.div(30, 0); }); }
+    void divByZeroTest() { Assertions.assertThrows(IllegalArgumentException.class, () -> { C.div(30, 0); }); }
 
     /**
      * Simple pow operation calculate test
