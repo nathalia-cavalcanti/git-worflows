@@ -62,8 +62,7 @@ class CalculatorTest {
      * Division by zero operation calculate test
      */
     @Test
-    void divByZeroTest() { Assertions.assertThrows(IllegalArgumentException.class, () -> { Calculador C = new Calculator();
-    C.div(30, 0); }); }
+    void divByZeroTest() { Assertions.assertThrows(IllegalArgumentException.class, () -> { new Calculator().div(30, 0); }); }
 
     /**
      * Simple pow operation calculate test
